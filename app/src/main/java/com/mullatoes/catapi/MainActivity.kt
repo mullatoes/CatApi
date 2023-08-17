@@ -88,19 +88,3 @@ fun LaunchSnackBar() {
         }
     }
 }
-
-@Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name! .. ${ApiKeyUtil.getApiKey()}",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview() {
-    CatApiTheme {
-        Greeting("Android")
-    }
-}
